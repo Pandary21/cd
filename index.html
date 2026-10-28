@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="走进蜀韵成都，探索天府美食、城市风光与悠闲自在的巴蜀生活。"
+    />
+    <title>蜀韵·成都 — 一座来了就不想离开的城市</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 页头：品牌标识与首页导航 -->
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="蜀韵·成都首页">
+        <span class="brand-seal" aria-hidden="true">蜀</span>
+        <span class="brand-name">蜀韵<span>·</span>成都</span>
+      </a>
+
+      <nav class="main-nav" aria-label="主导航">
+        <a class="nav-link active" href="#home" aria-current="page">首页</a>
+        <a class="nav-link" href="#food">美食</a>
+        <a class="nav-link" href="#sights">景点</a>
+        <a class="nav-link" href="#culture">文化</a>
+        <a class="nav-link" href="#travel">攻略</a>
+      </nav>
+
+      <a class="header-cta" href="#discover">开启旅程 <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <!-- 首页轮播：三张城市风光图，可使用两侧按钮和下方圆点切换 -->
+      <section class="hero" id="home" aria-label="成都风光轮播">
+        <div class="hero-slides">
+          <article class="hero-slide is-active" aria-hidden="false">
+            <img
+              class="hero-image"
+              src="https://images.pexels.com/videos/35558007/chengdu-china-new-century-global-center-35558007.jpeg?auto=compress&cs=tinysrgb&w=2400"
+              alt="成都新世纪环球中心与城市街景"
+              fetchpriority="high"
+            />
+            <div class="hero-copy">
+              <span class="eyebrow"><span></span> LAND OF ABUNDANCE · 天府之国</span>
+              <h1>慢下来，<br />遇见成都。</h1>
+              <p>在烟火与诗意之间，发现一座城的温柔日常。</p>
+              <a class="hero-link" href="#discover">探索成都 <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="slide-caption">01 / 一城烟火，万种风情</span>
+          </article>
+
+          <article class="hero-slide" aria-hidden="true">
+            <img
+              class="hero-image"
+              src="https://images.pexels.com/videos/35558052/chengdu-china-chunxin-road-35558052.jpeg?auto=compress&cs=tinysrgb&w=2400"
+              alt="春熙路夜色中的成都繁华街景"
+              loading="lazy"
+            />
+            <div class="hero-copy">
+              <span class="eyebrow"><span></span> ANCIENT CHARM · 巴蜀风华</span>
+              <h2>千年蜀都，<br />一眼心动。</h2>
+              <p>漫步街巷之间，让古老故事与今日生活相遇。</p>
+              <a class="hero-link" href="#culture">走近巴蜀 <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="slide-caption">02 / 巷陌深处，自有风雅</span>
+          </article>
+
+          <article class="hero-slide" aria-hidden="true">
+            <img
+              class="hero-image"
+              src="https://images.pexels.com/videos/35392002/chengdu-china-travel-chengdu-city-vibes-chengdu-city-walk-chengdu-daily-life-35392002.jpeg?auto=compress&cs=tinysrgb&w=2400"
+              alt="成都街头行走与现代城市风貌"
+              loading="lazy"
+            />
+            <div class="hero-copy">
+              <span class="eyebrow"><span></span> CITY OF INSPIRATION · 灵感之城</span>
+              <h2>繁华成都，<br />自在生活。</h2>
+              <p>从城市地标到街边茶馆，每一步都有新的惊喜。</p>
+              <a class="hero-link" href="#sights">发现风景 <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="slide-caption">03 / 在成都，过喜欢的生活</span>
+          </article>
+        </div>
+
+        <div class="hero-bottom">
+          <div class="slide-controls" aria-label="轮播图控制">
+            <button class="slide-arrow" type="button" data-direction="-1" aria-label="上一张">←</button>
+            <div class="slide-dots">
+              <button class="slide-dot is-active" type="button" aria-label="第 1 张" aria-pressed="true"></button>
+              <button class="slide-dot" type="button" aria-label="第 2 张" aria-pressed="false"></button>
+              <button class="slide-dot" type="button" aria-label="第 3 张" aria-pressed="false"></button>
+            </div>
+            <button class="slide-arrow" type="button" data-direction="1" aria-label="下一张">→</button>
+          </div>
+          <a class="scroll-cue" href="#discover"><span></span> 向下探索</a>
+        </div>
+      </section>
+
+      <!-- 视频介绍：为视频保留独立区域，支持原生播放控制 -->
+      <section class="film-section section-wrap" id="discover">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">A GLIMPSE OF CHENGDU</span>
+            <h2>一段光影，走进成都</h2>
+          </div>
+          <p>从晨光中的街巷，到灯火里的锦江<br />循着光影，遇见天府的日与夜。</p>
+        </div>
+        <div class="film-frame" id="film">
+          <video
+            controls
+            preload="metadata"
+            poster="https://images.pexels.com/videos/35558007/chengdu-china-new-century-global-center-35558007.jpeg?auto=compress&cs=tinysrgb&w=1800"
+            aria-label="成都城市风光宣传视频"
+          >
+            <source
+              src="https://videos.pexels.com/video-files/35558007/15066807_1920_1080_60fps.mp4"
+              type="video/mp4"
+            />
+            您的浏览器暂不支持视频播放。
+          </video>
+          <span class="film-label">CHENGDU · CITY FILM</span>
+        </div>
+      </section>
+
+      <!-- 成都简介：以约百字介绍城市气质与旅行体验 -->
+      <section class="intro-section" id="culture">
+        <div class="intro-inner section-wrap">
+          <span class="intro-mark" aria-hidden="true">蓉</span>
+          <span class="section-kicker">A CITY WITH A SOUL</span>
+          <h2>成都，是一种恰好的生活。</h2>
+          <p>
+            成都，是一座把日子过成诗的城市。这里有金沙遗址的千年文脉、宽窄巷子的市井烟火，也有麻辣鲜香的川味与茶馆里的清闲时光。从街巷古迹到锦江夜色，从可爱的大熊猫到近郊青城山，每一次漫步都能遇见新风景。来成都，品美食、赏山水，在从容闲适里感受天府之国的温暖与精彩。
+          </p>
+          <a class="text-link" href="#travel">读懂成都的旅行方式 <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <!-- 城市灵感卡片：对应导航中的美食、景点与攻略锚点 -->
+      <section class="discover-section section-wrap" aria-labelledby="discover-title">
+        <div class="section-heading discover-heading">
+          <div>
+            <span class="section-kicker">FIND YOUR CHENGDU</span>
+            <h2 id="discover-title">在成都，发现更多</h2>
+          </div>
+          <span class="heading-note">一城之美，不止一面</span>
+        </div>
+        <div class="feature-grid">
+          <a class="feature-card" id="food" href="#film">
+            <span class="feature-number">01</span>
+            <span class="feature-title">舌尖寻味</span>
+            <span class="feature-description">从一口火锅开始，品尝成都的热辣与鲜香。</span>
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="feature-card" id="sights" href="#film">
+            <span class="feature-number">02</span>
+            <span class="feature-title">沿途风景</span>
+            <span class="feature-description">穿过古街与公园，遇见城市里的山水人文。</span>
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="feature-card" id="travel" href="#discover">
+            <span class="feature-number">03</span>
+            <span class="feature-title">自在出发</span>
+            <span class="feature-description">收好旅行灵感，开启一段从容的成都之旅。</span>
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- 页尾：品牌落款与回到顶部入口 -->
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home" aria-label="返回蜀韵·成都首页">
+        <span class="brand-seal" aria-hidden="true">蜀</span>
+        <span class="brand-name">蜀韵<span>·</span>成都</span>
+      </a>
+      <p>山水有相逢，成都常相忆。</p>
+      <a class="back-to-top" href="#home">回到顶部 ↑</a>
+      <span class="footer-copy">© 2026 蜀韵·成都 · 天府之国，安逸成都</span>
+    </footer>
+
+    <!-- 轮播交互：支持箭头、圆点切换与自动播放 -->
+    <script>
+      const slides = Array.from(document.querySelectorAll(".hero-slide"));
+      const dots = Array.from(document.querySelectorAll(".slide-dot"));
+      const carousel = document.querySelector(".hero");
+      let activeSlide = 0;
+      let autoplayTimer;
+
+      function showSlide(index) {
+        activeSlide = (index + slides.length) % slides.length;
+        slides.forEach((slide, slideIndex) => {
+          const isActive = slideIndex === activeSlide;
+          slide.classList.toggle("is-active", isActive);
+          slide.setAttribute("aria-hidden", String(!isActive));
+          dots[slideIndex].classList.toggle("is-active", isActive);
+          dots[slideIndex].setAttribute("aria-pressed", String(isActive));
+        });
+      }
+
+      function startAutoplay() {
+        window.clearInterval(autoplayTimer);
+        autoplayTimer = window.setInterval(() => showSlide(activeSlide + 1), 6000);
+      }
+
+      document.querySelectorAll(".slide-arrow").forEach((button) => {
+        button.addEventListener("click", () => {
+          showSlide(activeSlide + Number(button.dataset.direction));
+          startAutoplay();
+        });
+      });
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          showSlide(index);
+          startAutoplay();
+        });
+      });
+
+      carousel.addEventListener("mouseenter", () => window.clearInterval(autoplayTimer));
+      carousel.addEventListener("mouseleave", startAutoplay);
+      carousel.addEventListener("focusin", () => window.clearInterval(autoplayTimer));
+      carousel.addEventListener("focusout", startAutoplay);
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        startAutoplay();
+      }
+    </script>
+  </body>
+</html>
